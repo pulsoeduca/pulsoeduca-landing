@@ -45,7 +45,7 @@ function Hero() {
         <div className="lg:col-span-7">
           <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary-soft px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-primary-deep">
             <span className="size-1.5 rounded-full bg-primary animate-pulse" />
-            Negócio de impacto social · Escolas particulares
+            Tecnologia e inovação para ambientes escolares
           </span>
           <h1 className="mt-6 text-5xl md:text-6xl lg:text-7xl font-black leading-[0.95] text-ink">
             O que sua escola <span className="text-primary">ainda não</span> consegue ver,
@@ -53,8 +53,8 @@ function Hero() {
           </h1>
           <p className="mt-7 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed">
             Diagnóstico preventivo, planejamento estratégico e oficinas autorais
-            para transformar o convívio escolar — com foco em alimentação e
-            segurança de relacionamento e gênero.
+            para transformar o convívio escolar — com foco em alimentação,
+            relacionamentos e cultura institucional.
           </p>
           <div className="mt-9 flex flex-wrap gap-3">
             <a href="#contato" className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-base font-bold text-primary-foreground shadow-glow hover:bg-primary-deep transition-all hover:-translate-y-0.5">
@@ -102,9 +102,9 @@ function Hero() {
 
 function Problem() {
   const items = [
-    "Conflitos de gênero que ninguém comenta abertamente",
+    "Tensões de convivência que ninguém comenta abertamente",
     "Estudantes que não comem ou comem escondido",
-    "Léxico redpill chegando pela internet",
+    "Discursos polarizadores chegando pela internet",
     "Famílias e gestores em narrativas paralelas",
   ];
   return (
@@ -119,7 +119,7 @@ function Problem() {
           <p className="mt-6 text-lg text-cream/70 leading-relaxed">
             Gestores escolares operam no ritmo da urgência. O que aparece é o
             visível: notas, frequência, reclamações. O que adoece o ambiente —
-            convívio, alimentação, masculinidades, vínculos — fica abaixo da linha
+            convívio, alimentação, vínculos e cultura — fica abaixo da linha
             d'água, até virar crise.
           </p>
         </div>
@@ -224,12 +224,12 @@ function Services() {
 
 function Method() {
   const dims = [
-    { code: "SCEG", name: "Convivência e Equidade de Gênero", weight: "20%" },
-    { code: "SCAE", name: "Cultura Alimentar Escolar", weight: "20%" },
-    { code: "SECR", name: "Exposição à Cultura Redpill", weight: "15%" },
-    { code: "SLMD", name: "Letramento e Mediação Digital", weight: "10%" },
-    { code: "SCPI", name: "Cultura e Práticas Institucionais", weight: "20%" },
-    { code: "SGD", name: "Gestão e Diretrizes", weight: "15%" },
+    { code: "SCEG", name: "Convivência e Equidade" },
+    { code: "SCAE", name: "Cultura Alimentar Escolar" },
+    { code: "SECR", name: "Exposição a Conteúdos de Risco" },
+    { code: "SLMD", name: "Letramento e Mediação Digital" },
+    { code: "SCPI", name: "Cultura e Práticas Institucionais" },
+    { code: "SGD", name: "Gestão e Diretrizes" },
   ];
   return (
     <section id="iseam" className="bg-cream py-28 relative overflow-hidden">
@@ -243,10 +243,9 @@ function Method() {
             Um índice. Seis dimensões. Uma escala que escola entende.
           </h2>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-            O ISEAM (Índice de Saúde Escolar em Alimentação e Masculinidades)
-            traduz a vida escolar em uma nota de 0 a 10 — não para ranquear, mas
-            para mostrar <strong className="text-ink">onde olhar</strong> e
-            acompanhar a evolução ao longo do tempo.
+            O ISEAM traduz a vida escolar em uma nota de 0 a 10 — não para
+            ranquear, mas para mostrar <strong className="text-ink">onde olhar</strong>
+            {" "}e acompanhar a evolução ao longo do tempo.
           </p>
           <div className="mt-8 grid grid-cols-5 gap-1 rounded-2xl overflow-hidden border border-border">
             {[
@@ -267,17 +266,14 @@ function Method() {
           <div className="rounded-3xl bg-card border border-border shadow-soft overflow-hidden">
             <div className="bg-ink text-cream px-6 py-4 flex items-center justify-between">
               <span className="text-xs font-bold uppercase tracking-widest">Matriz ISEAM</span>
-              <span className="text-xs font-semibold text-cream/60">peso total · 100%</span>
+              <span className="text-xs font-semibold text-cream/60">6 eixos avaliados</span>
             </div>
             <ul className="divide-y divide-border">
-              {dims.map((d) => (
+              {dims.map((d, i) => (
                 <li key={d.code} className="flex items-center gap-5 px-6 py-5 hover:bg-cream/60 transition-colors">
-                  <span className="text-xs font-black text-primary tracking-wider w-14">{d.code}</span>
+                  <span className="text-xs font-black text-primary tracking-wider w-8 tabular-nums">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="text-xs font-black text-muted-foreground tracking-wider w-14">{d.code}</span>
                   <span className="flex-1 text-base font-semibold text-ink">{d.name}</span>
-                  <span className="text-sm font-black text-ink tabular-nums">{d.weight}</span>
-                  <div className="hidden sm:block w-24 h-2 rounded-full bg-secondary overflow-hidden">
-                    <div className="h-full bg-primary" style={{ width: d.weight }} />
-                  </div>
                 </li>
               ))}
             </ul>
@@ -297,7 +293,7 @@ function ForWho() {
           <div className="relative max-w-2xl">
             <p className="text-xs font-bold uppercase tracking-widest text-primary-foreground/80">Para quem é</p>
             <h2 className="mt-3 text-4xl md:text-5xl font-black leading-tight">
-              Escolas particulares que querem sair do reativo.
+              Escolas que querem sair do reativo.
             </h2>
             <p className="mt-6 text-lg text-primary-foreground/90 leading-relaxed">
               Trabalhamos com gestores, mantenedores e coordenações pedagógicas
@@ -349,7 +345,7 @@ function Footer() {
     <footer className="bg-ink text-cream/80 py-14">
       <div className="mx-auto max-w-7xl px-6 flex flex-col md:flex-row items-center justify-between gap-6">
         <img src={logoHorizontal} alt="Pulso Educa" className="h-12" />
-        <p className="text-sm">© {new Date().getFullYear()} Pulso Educa · Negócio de impacto social.</p>
+        <p className="text-sm">© {new Date().getFullYear()} Pulso Educa · Tecnologia e inovação para a educação.</p>
         <div className="flex gap-6 text-sm font-semibold">
           <a href="#servicos" className="hover:text-primary transition-colors">Serviços</a>
           <a href="#iseam" className="hover:text-primary transition-colors">ISEAM</a>
