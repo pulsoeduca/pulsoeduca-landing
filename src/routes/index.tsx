@@ -293,7 +293,7 @@ function ForWho() {
           <div className="relative max-w-2xl">
             <p className="text-xs font-bold uppercase tracking-widest text-primary-foreground/80">Para quem é</p>
             <h2 className="mt-3 text-4xl md:text-5xl font-black leading-tight">
-              Escolas particulares que querem sair do reativo.
+              Escolas que querem sair do reativo.
             </h2>
             <p className="mt-6 text-lg text-primary-foreground/90 leading-relaxed">
               Trabalhamos com gestores, mantenedores e coordenações pedagógicas
