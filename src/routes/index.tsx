@@ -53,8 +53,8 @@ function Hero() {
           </h1>
           <p className="mt-7 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed">
             Diagnóstico preventivo, planejamento estratégico e oficinas autorais
-            para transformar o convívio escolar — com foco em alimentação e
-            segurança de relacionamento e gênero.
+            para transformar o convívio escolar — com foco em alimentação,
+            relacionamentos e cultura institucional.
           </p>
           <div className="mt-9 flex flex-wrap gap-3">
             <a href="#contato" className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-base font-bold text-primary-foreground shadow-glow hover:bg-primary-deep transition-all hover:-translate-y-0.5">
