@@ -224,12 +224,12 @@ function Services() {
 
 function Method() {
   const dims = [
-    { code: "SCEG", name: "Convivência e Equidade de Gênero", weight: "20%" },
-    { code: "SCAE", name: "Cultura Alimentar Escolar", weight: "20%" },
-    { code: "SECR", name: "Exposição à Cultura Redpill", weight: "15%" },
-    { code: "SLMD", name: "Letramento e Mediação Digital", weight: "10%" },
-    { code: "SCPI", name: "Cultura e Práticas Institucionais", weight: "20%" },
-    { code: "SGD", name: "Gestão e Diretrizes", weight: "15%" },
+    { code: "SCEG", name: "Convivência e Equidade" },
+    { code: "SCAE", name: "Cultura Alimentar Escolar" },
+    { code: "SECR", name: "Exposição a Conteúdos de Risco" },
+    { code: "SLMD", name: "Letramento e Mediação Digital" },
+    { code: "SCPI", name: "Cultura e Práticas Institucionais" },
+    { code: "SGD", name: "Gestão e Diretrizes" },
   ];
   return (
     <section id="iseam" className="bg-cream py-28 relative overflow-hidden">
