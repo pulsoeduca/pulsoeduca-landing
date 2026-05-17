@@ -45,7 +45,7 @@ function Hero() {
         <div className="lg:col-span-7">
           <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary-soft px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-primary-deep">
             <span className="size-1.5 rounded-full bg-primary animate-pulse" />
-            Negócio de impacto social · Escolas particulares
+            Tecnologia e inovação para ambientes escolares
           </span>
           <h1 className="mt-6 text-5xl md:text-6xl lg:text-7xl font-black leading-[0.95] text-ink">
             O que sua escola <span className="text-primary">ainda não</span> consegue ver,
