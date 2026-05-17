@@ -243,10 +243,9 @@ function Method() {
             Um índice. Seis dimensões. Uma escala que escola entende.
           </h2>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-            O ISEAM (Índice de Saúde Escolar em Alimentação e Masculinidades)
-            traduz a vida escolar em uma nota de 0 a 10 — não para ranquear, mas
-            para mostrar <strong className="text-ink">onde olhar</strong> e
-            acompanhar a evolução ao longo do tempo.
+            O ISEAM traduz a vida escolar em uma nota de 0 a 10 — não para
+            ranquear, mas para mostrar <strong className="text-ink">onde olhar</strong>
+            {" "}e acompanhar a evolução ao longo do tempo.
           </p>
           <div className="mt-8 grid grid-cols-5 gap-1 rounded-2xl overflow-hidden border border-border">
             {[
