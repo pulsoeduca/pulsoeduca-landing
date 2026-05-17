@@ -102,9 +102,9 @@ function Hero() {
 
 function Problem() {
   const items = [
-    "Conflitos de gênero que ninguém comenta abertamente",
+    "Tensões de convivência que ninguém comenta abertamente",
     "Estudantes que não comem ou comem escondido",
-    "Léxico redpill chegando pela internet",
+    "Discursos polarizadores chegando pela internet",
     "Famílias e gestores em narrativas paralelas",
   ];
   return (
