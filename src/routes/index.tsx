@@ -266,17 +266,14 @@ function Method() {
           <div className="rounded-3xl bg-card border border-border shadow-soft overflow-hidden">
             <div className="bg-ink text-cream px-6 py-4 flex items-center justify-between">
               <span className="text-xs font-bold uppercase tracking-widest">Matriz ISEAM</span>
-              <span className="text-xs font-semibold text-cream/60">peso total · 100%</span>
+              <span className="text-xs font-semibold text-cream/60">6 eixos avaliados</span>
             </div>
             <ul className="divide-y divide-border">
-              {dims.map((d) => (
+              {dims.map((d, i) => (
                 <li key={d.code} className="flex items-center gap-5 px-6 py-5 hover:bg-cream/60 transition-colors">
-                  <span className="text-xs font-black text-primary tracking-wider w-14">{d.code}</span>
+                  <span className="text-xs font-black text-primary tracking-wider w-8 tabular-nums">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="text-xs font-black text-muted-foreground tracking-wider w-14">{d.code}</span>
                   <span className="flex-1 text-base font-semibold text-ink">{d.name}</span>
-                  <span className="text-sm font-black text-ink tabular-nums">{d.weight}</span>
-                  <div className="hidden sm:block w-24 h-2 rounded-full bg-secondary overflow-hidden">
-                    <div className="h-full bg-primary" style={{ width: d.weight }} />
-                  </div>
                 </li>
               ))}
             </ul>
