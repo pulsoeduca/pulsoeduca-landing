@@ -3,6 +3,7 @@ import logoHorizontal from "@/assets/pulso-logo-horizontal.png";
 import walker from "@/assets/pulso-walker.png";
 import ring from "@/assets/pulso-ring.png";
 import logoSquare from "@/assets/pulso-logo-square.png";
+import selo from "@/assets/pulso-selo.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
