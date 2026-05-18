@@ -88,9 +88,14 @@ function Hero() {
               <p className="text-xs font-bold text-primary uppercase tracking-wider">Convivência</p>
               <p className="text-sm font-semibold text-ink mt-1 leading-snug">O centro do nosso diagnóstico</p>
             </div>
-            <div className="absolute -top-6 -right-4 bg-card rounded-2xl p-4 shadow-soft border border-border/60">
-              <p className="text-xs font-bold text-primary uppercase tracking-wider">ISEAM</p>
-              <p className="text-2xl font-black text-ink mt-1">8.4<span className="text-base text-muted-foreground">/10</span></p>
+            <div className="absolute -top-6 -right-4 bg-card rounded-2xl p-4 shadow-soft border border-border/60 flex items-center gap-3">
+              <div className="size-12 rounded-xl bg-primary grid place-items-center shrink-0 overflow-hidden">
+                <img src={walker} alt="" className="h-10 w-auto object-contain" />
+              </div>
+              <div>
+                <p className="text-xs font-bold text-primary uppercase tracking-wider">ISEAM</p>
+                <p className="text-2xl font-black text-ink mt-0.5 leading-none">8.4<span className="text-base text-muted-foreground">/10</span></p>
+              </div>
             </div>
           </div>
         </div>
