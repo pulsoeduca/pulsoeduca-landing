@@ -435,6 +435,7 @@ function Index() {
         <Problem />
         <Services />
         <Method />
+        <Seal />
         <ForWho />
         <CTA />
       </main>
