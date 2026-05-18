@@ -242,21 +242,21 @@ function Method() {
             Um índice. Seis dimensões. Uma escala que escola entende.
           </h2>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-            O ISEAM traduz a vida escolar em uma nota de 0 a 10 — não para
+            O ISEAM traduz a vida escolar em uma nota de 0 a 10. Não para
             ranquear, mas para mostrar <strong className="text-ink">onde olhar</strong>
             {" "}e acompanhar a evolução ao longo do tempo.
           </p>
           <div className="mt-8 grid grid-cols-5 gap-1 rounded-2xl overflow-hidden border border-border">
             {[
-              { f: "0–3,9", c: "Crítico", bg: "bg-destructive" },
-              { f: "4–5,9", c: "Alerta", bg: "bg-accent" },
-              { f: "6–7,4", c: "Em desenvolvimento", bg: "bg-primary-soft" },
-              { f: "7,5–8,9", c: "Consolidado", bg: "bg-primary" },
-              { f: "9–10", c: "Referência", bg: "bg-primary-deep" },
+              { f: "0–3,9", c: "Crítico", bg: "bg-ink", text: "text-cream" },
+              { f: "4–5,9", c: "Alerta", bg: "bg-accent", text: "text-ink" },
+              { f: "6–7,4", c: "Em desenv.", bg: "bg-primary-soft", text: "text-ink" },
+              { f: "7,5–8,9", c: "Consolidado", bg: "bg-primary", text: "text-primary-foreground" },
+              { f: "9–10", c: "Referência", bg: "bg-primary-deep", text: "text-primary-foreground" },
             ].map((f) => (
-              <div key={f.c} className={`${f.bg} p-3 text-center`}>
-                <p className={`text-[10px] font-black uppercase tracking-wider ${f.bg === "bg-primary-soft" || f.bg === "bg-accent" ? "text-ink" : "text-primary-foreground"}`}>{f.f}</p>
-                <p className={`text-[10px] font-semibold leading-tight mt-1 ${f.bg === "bg-primary-soft" || f.bg === "bg-accent" ? "text-ink/80" : "text-primary-foreground/90"}`}>{f.c}</p>
+              <div key={f.c} className={`${f.bg} px-2 py-3 text-center flex flex-col justify-between min-h-[80px]`}>
+                <p className={`text-[10px] font-black uppercase tracking-wider ${f.text}`}>{f.f}</p>
+                <p className={`text-[10px] font-semibold leading-tight mt-1 break-words ${f.text} opacity-95`}>{f.c}</p>
               </div>
             ))}
           </div>
