@@ -288,7 +288,61 @@ function Method() {
   );
 }
 
-function ForWho() {
+function Seal() {
+  return (
+    <section className="py-28 bg-cream/60">
+      <div className="mx-auto max-w-7xl px-6">
+        <div className="rounded-[2.5rem] bg-card border border-border shadow-soft overflow-hidden">
+          <div className="grid lg:grid-cols-12 gap-0">
+            <div className="lg:col-span-5 bg-primary flex items-center justify-center p-12 md:p-16 relative">
+              <div className="absolute inset-0 opacity-10">
+                <img src={ring} alt="" className="w-full h-full object-cover" />
+              </div>
+              <img
+                src={selo}
+                alt="Selo Pulso Educa"
+                className="relative w-full max-w-[320px] aspect-square object-contain drop-shadow-2xl"
+              />
+            </div>
+            <div className="lg:col-span-7 p-10 md:p-16 flex flex-col justify-center">
+              <p className="text-xs font-bold uppercase tracking-widest text-primary">Selo Pulso Educa</p>
+              <h2 className="mt-4 text-4xl md:text-5xl font-black text-ink leading-tight">
+                Um selo que comunica cuidado às famílias.
+              </h2>
+              <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
+                Escolas que atingem nota ISEAM acima de 7,5 recebem o Selo Pulso
+                Educa, um reconhecimento público do compromisso com um ambiente
+                escolar mais seguro, saudável e bem cuidado.
+              </p>
+              <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
+                Mais do que um diagnóstico interno, o selo é uma ferramenta de
+                reputação e atração: fortalece a imagem institucional, gera
+                confiança junto às famílias e se torna um diferencial concreto
+                na captação e retenção de alunos.
+              </p>
+              <ul className="mt-8 grid sm:grid-cols-2 gap-3">
+                {[
+                  "Reconhecimento público do compromisso da escola",
+                  "Diferencial competitivo na captação de novos alunos",
+                  "Confiança e tranquilidade para as famílias",
+                  "Reforço da reputação institucional",
+                ].map((b) => (
+                  <li key={b} className="flex items-start gap-3 text-sm font-semibold text-ink">
+                    <span className="mt-1 size-2 rounded-full bg-primary shrink-0" />
+                    <span>{b}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-8 text-xs text-muted-foreground italic">
+                Concedido às escolas que alcançam nota ISEAM igual ou superior a 7,5.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
   return (
     <section className="py-28">
       <div className="mx-auto max-w-7xl px-6">
