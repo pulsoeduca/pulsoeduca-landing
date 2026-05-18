@@ -296,8 +296,8 @@ function ForWho() {
             </h2>
             <p className="mt-6 text-lg text-primary-foreground/90 leading-relaxed">
               Trabalhamos com gestores, mantenedores e coordenações pedagógicas
-              que entendem que prevenção custa menos — financeira, reputacional
-              e humanamente — do que apagar incêndios.
+              que entendem que prevenção custa menos (financeira, reputacional
+              e humanamente) do que apagar incêndios.
             </p>
             <div className="mt-8 grid sm:grid-cols-3 gap-4">
               {["Educação Infantil", "Fundamental I e II", "Ensino Médio"].map((s) => (
