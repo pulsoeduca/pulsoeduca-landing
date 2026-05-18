@@ -143,7 +143,7 @@ function Services() {
       n: "01",
       tag: "Diagnóstico",
       title: "Diagnóstico preventivo ISEAM",
-      desc: "Mapeamos seis dimensões da vida escolar — convivência, alimentação, exposição digital, práticas institucionais — combinando questionários, rodas, etnografia e entrevistas. Entregamos um índice de 0 a 10 e um relatório que dá visibilidade ao invisível.",
+      desc: "Mapeamos seis dimensões da vida escolar (convivência, alimentação, exposição digital, práticas institucionais), combinando questionários, rodas, etnografia e entrevistas. Entregamos um índice de 0 a 10 e um relatório que dá visibilidade ao invisível.",
       bullets: ["Coleta qualitativa e quantitativa", "Índice ISEAM (0–10)", "Relatório com cenas, falas e recomendações"],
     },
     {
@@ -157,7 +157,7 @@ function Services() {
       n: "03",
       tag: "Implementação",
       title: "Oficinas e atividades autorais",
-      desc: "Oficinas, formações e experiências — autorais ou em parceria com empresas — que sustentam a transição cultural. De rodas reflexivas para meninos a visitas a hortas urbanas, tudo costurado ao plano da escola.",
+      desc: "Oficinas, formações e experiências, autorais ou em parceria com empresas, que sustentam a transição cultural. De rodas reflexivas para meninos a visitas a hortas urbanas, tudo costurado ao plano da escola.",
       bullets: ["Rodas reflexivas e formações docentes", "Visitas guiadas (hortas urbanas e parceiros)", "Curadoria de programas com parceiros"],
     },
   ];
@@ -174,7 +174,7 @@ function Services() {
           </h2>
           <p className="mt-6 text-lg text-muted-foreground">
             Você pode começar pelo diagnóstico, contratar a jornada completa ou
-            entrar direto em oficinas pontuais. Funciona em qualquer ordem — e
+            entrar direto em oficinas pontuais. Funciona em qualquer ordem, e
             melhor ainda em sequência.
           </p>
         </div>
@@ -323,7 +323,7 @@ function CTA() {
         </h2>
         <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto">
           Conte um pouco do contexto e marcamos uma conversa de 30 minutos com a
-          gestão. Sem compromisso — só escuta e clareza sobre o próximo passo.
+          gestão. Sem compromisso. Só escuta e clareza sobre o próximo passo.
         </p>
         <form className="mt-10 grid sm:grid-cols-2 gap-3 max-w-xl mx-auto text-left">
           <input className="rounded-full border-2 border-border bg-card px-5 py-3.5 text-base font-semibold focus:outline-none focus:border-primary" placeholder="Seu nome" />
