@@ -44,8 +44,7 @@ function Hero() {
       <div className="mx-auto max-w-7xl px-6 pt-16 pb-24 lg:pt-24 lg:pb-32 grid lg:grid-cols-12 gap-12 items-center relative">
         <div className="lg:col-span-7">
           <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary-soft px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-primary-deep">
-            <span className="size-1.5 rounded-full bg-primary animate-pulse" />
-            Tecnologia e inovação para ambientes escolares
+            Tecnologia social e inovação para ambientes escolares
           </span>
           <h1 className="mt-6 text-5xl md:text-6xl lg:text-7xl font-black leading-[0.95] text-ink">
             O que sua escola <span className="text-primary">ainda não</span> consegue ver,
@@ -53,7 +52,7 @@ function Hero() {
           </h1>
           <p className="mt-7 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed">
             Diagnóstico preventivo, planejamento estratégico e oficinas autorais
-            para transformar o convívio escolar — com foco em alimentação,
+            para transformar o convívio escolar, com foco em alimentação,
             relacionamentos e cultura institucional.
           </p>
           <div className="mt-9 flex flex-wrap gap-3">
