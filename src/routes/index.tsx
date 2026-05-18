@@ -13,8 +13,8 @@ function Header() {
     <header className="sticky top-0 z-40 backdrop-blur-md bg-background/80 border-b border-border/60">
       <div className="mx-auto max-w-7xl px-6 h-20 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-3">
-          <div className="size-11 rounded-2xl bg-primary grid place-items-center shadow-soft">
-            <img src={ring} alt="" className="size-7" />
+          <div className="size-12 rounded-2xl bg-primary grid place-items-center shadow-soft overflow-hidden">
+            <img src={walker} alt="Pulso Educa" className="h-10 w-auto object-contain" />
           </div>
           <span className="text-xl font-extrabold tracking-tight text-ink">
             Pulso<span className="text-primary"> Educa</span>
@@ -44,8 +44,7 @@ function Hero() {
       <div className="mx-auto max-w-7xl px-6 pt-16 pb-24 lg:pt-24 lg:pb-32 grid lg:grid-cols-12 gap-12 items-center relative">
         <div className="lg:col-span-7">
           <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary-soft px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-primary-deep">
-            <span className="size-1.5 rounded-full bg-primary animate-pulse" />
-            Tecnologia e inovação para ambientes escolares
+            Tecnologia social e inovação para ambientes escolares
           </span>
           <h1 className="mt-6 text-5xl md:text-6xl lg:text-7xl font-black leading-[0.95] text-ink">
             O que sua escola <span className="text-primary">ainda não</span> consegue ver,
@@ -53,7 +52,7 @@ function Hero() {
           </h1>
           <p className="mt-7 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed">
             Diagnóstico preventivo, planejamento estratégico e oficinas autorais
-            para transformar o convívio escolar — com foco em alimentação,
+            para transformar o convívio escolar, com foco em alimentação,
             relacionamentos e cultura institucional.
           </p>
           <div className="mt-9 flex flex-wrap gap-3">
@@ -89,9 +88,14 @@ function Hero() {
               <p className="text-xs font-bold text-primary uppercase tracking-wider">Convivência</p>
               <p className="text-sm font-semibold text-ink mt-1 leading-snug">O centro do nosso diagnóstico</p>
             </div>
-            <div className="absolute -top-6 -right-4 bg-card rounded-2xl p-4 shadow-soft border border-border/60">
-              <p className="text-xs font-bold text-primary uppercase tracking-wider">ISEAM</p>
-              <p className="text-2xl font-black text-ink mt-1">8.4<span className="text-base text-muted-foreground">/10</span></p>
+            <div className="absolute -top-6 -right-4 bg-card rounded-2xl p-4 shadow-soft border border-border/60 flex items-center gap-3">
+              <div className="size-12 rounded-xl bg-primary grid place-items-center shrink-0 overflow-hidden">
+                <img src={walker} alt="" className="h-10 w-auto object-contain" />
+              </div>
+              <div>
+                <p className="text-xs font-bold text-primary uppercase tracking-wider">ISEAM</p>
+                <p className="text-2xl font-black text-ink mt-0.5 leading-none">8.4<span className="text-base text-muted-foreground">/10</span></p>
+              </div>
             </div>
           </div>
         </div>
@@ -118,8 +122,8 @@ function Problem() {
           </h2>
           <p className="mt-6 text-lg text-cream/70 leading-relaxed">
             Gestores escolares operam no ritmo da urgência. O que aparece é o
-            visível: notas, frequência, reclamações. O que adoece o ambiente —
-            convívio, alimentação, vínculos e cultura — fica abaixo da linha
+            visível: notas, frequência, reclamações. O que adoece o ambiente,
+            convívio, alimentação, vínculos e cultura, fica abaixo da linha
             d'água, até virar crise.
           </p>
         </div>
@@ -144,7 +148,7 @@ function Services() {
       n: "01",
       tag: "Diagnóstico",
       title: "Diagnóstico preventivo ISEAM",
-      desc: "Mapeamos seis dimensões da vida escolar — convivência, alimentação, exposição digital, práticas institucionais — combinando questionários, rodas, etnografia e entrevistas. Entregamos um índice de 0 a 10 e um relatório que dá visibilidade ao invisível.",
+      desc: "Mapeamos seis dimensões da vida escolar (convivência, alimentação, exposição digital, práticas institucionais), combinando questionários, rodas, etnografia e entrevistas. Entregamos um índice de 0 a 10 e um relatório que dá visibilidade ao invisível.",
       bullets: ["Coleta qualitativa e quantitativa", "Índice ISEAM (0–10)", "Relatório com cenas, falas e recomendações"],
     },
     {
@@ -158,7 +162,7 @@ function Services() {
       n: "03",
       tag: "Implementação",
       title: "Oficinas e atividades autorais",
-      desc: "Oficinas, formações e experiências — autorais ou em parceria com empresas — que sustentam a transição cultural. De rodas reflexivas para meninos a visitas a hortas urbanas, tudo costurado ao plano da escola.",
+      desc: "Oficinas, formações e experiências, autorais ou em parceria com empresas, que sustentam a transição cultural. De rodas reflexivas para meninos a visitas a hortas urbanas, tudo costurado ao plano da escola.",
       bullets: ["Rodas reflexivas e formações docentes", "Visitas guiadas (hortas urbanas e parceiros)", "Curadoria de programas com parceiros"],
     },
   ];
@@ -175,7 +179,7 @@ function Services() {
           </h2>
           <p className="mt-6 text-lg text-muted-foreground">
             Você pode começar pelo diagnóstico, contratar a jornada completa ou
-            entrar direto em oficinas pontuais. Funciona em qualquer ordem — e
+            entrar direto em oficinas pontuais. Funciona em qualquer ordem, e
             melhor ainda em sequência.
           </p>
         </div>
@@ -243,21 +247,21 @@ function Method() {
             Um índice. Seis dimensões. Uma escala que escola entende.
           </h2>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-            O ISEAM traduz a vida escolar em uma nota de 0 a 10 — não para
+            O ISEAM traduz a vida escolar em uma nota de 0 a 10. Não para
             ranquear, mas para mostrar <strong className="text-ink">onde olhar</strong>
             {" "}e acompanhar a evolução ao longo do tempo.
           </p>
           <div className="mt-8 grid grid-cols-5 gap-1 rounded-2xl overflow-hidden border border-border">
             {[
-              { f: "0–3,9", c: "Crítico", bg: "bg-destructive" },
-              { f: "4–5,9", c: "Alerta", bg: "bg-accent" },
-              { f: "6–7,4", c: "Em desenvolvimento", bg: "bg-primary-soft" },
-              { f: "7,5–8,9", c: "Consolidado", bg: "bg-primary" },
-              { f: "9–10", c: "Referência", bg: "bg-primary-deep" },
+              { f: "0–3,9", c: "Crítico", bg: "bg-ink", text: "text-cream" },
+              { f: "4–5,9", c: "Alerta", bg: "bg-accent", text: "text-ink" },
+              { f: "6–7,4", c: "Em desenv.", bg: "bg-primary-soft", text: "text-ink" },
+              { f: "7,5–8,9", c: "Consolidado", bg: "bg-primary", text: "text-primary-foreground" },
+              { f: "9–10", c: "Referência", bg: "bg-primary-deep", text: "text-primary-foreground" },
             ].map((f) => (
-              <div key={f.c} className={`${f.bg} p-3 text-center`}>
-                <p className={`text-[10px] font-black uppercase tracking-wider ${f.bg === "bg-primary-soft" || f.bg === "bg-accent" ? "text-ink" : "text-primary-foreground"}`}>{f.f}</p>
-                <p className={`text-[10px] font-semibold leading-tight mt-1 ${f.bg === "bg-primary-soft" || f.bg === "bg-accent" ? "text-ink/80" : "text-primary-foreground/90"}`}>{f.c}</p>
+              <div key={f.c} className={`${f.bg} px-2 py-3 text-center flex flex-col justify-between min-h-[80px]`}>
+                <p className={`text-[10px] font-black uppercase tracking-wider ${f.text}`}>{f.f}</p>
+                <p className={`text-[10px] font-semibold leading-tight mt-1 break-words ${f.text} opacity-95`}>{f.c}</p>
               </div>
             ))}
           </div>
@@ -297,8 +301,8 @@ function ForWho() {
             </h2>
             <p className="mt-6 text-lg text-primary-foreground/90 leading-relaxed">
               Trabalhamos com gestores, mantenedores e coordenações pedagógicas
-              que entendem que prevenção custa menos — financeira, reputacional
-              e humanamente — do que apagar incêndios.
+              que entendem que prevenção custa menos (financeira, reputacional
+              e humanamente) do que apagar incêndios.
             </p>
             <div className="mt-8 grid sm:grid-cols-3 gap-4">
               {["Educação Infantil", "Fundamental I e II", "Ensino Médio"].map((s) => (
@@ -324,7 +328,7 @@ function CTA() {
         </h2>
         <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto">
           Conte um pouco do contexto e marcamos uma conversa de 30 minutos com a
-          gestão. Sem compromisso — só escuta e clareza sobre o próximo passo.
+          gestão. Sem compromisso. Só escuta e clareza sobre o próximo passo.
         </p>
         <form className="mt-10 grid sm:grid-cols-2 gap-3 max-w-xl mx-auto text-left">
           <input className="rounded-full border-2 border-border bg-card px-5 py-3.5 text-base font-semibold focus:outline-none focus:border-primary" placeholder="Seu nome" />
@@ -344,7 +348,7 @@ function Footer() {
   return (
     <footer className="bg-ink text-cream/80 py-14">
       <div className="mx-auto max-w-7xl px-6 flex flex-col md:flex-row items-center justify-between gap-6">
-        <img src={logoHorizontal} alt="Pulso Educa" className="h-12" />
+        <img src={logoHorizontal} alt="Pulso Educa" className="size-20 rounded-2xl object-cover shadow-soft" />
         <p className="text-sm">© {new Date().getFullYear()} Pulso Educa · Tecnologia e inovação para a educação.</p>
         <div className="flex gap-6 text-sm font-semibold">
           <a href="#servicos" className="hover:text-primary transition-colors">Serviços</a>
