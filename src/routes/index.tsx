@@ -51,9 +51,8 @@ function Hero() {
             a gente revela.
           </h1>
           <p className="mt-7 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed">
-            Diagnóstico preventivo, planejamento estratégico e oficinas autorais
-            para transformar o convívio escolar em alimentação, relacionamentos
-            e cultura institucional.
+            Diagnóstico preventivo, planejamento estratégico e oficinas
+            autorais para tornar a cultura escolar mais saudável e segura.
           </p>
           <div className="mt-9 flex flex-wrap gap-3">
             <a href="#contato" className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-base font-bold text-primary-foreground shadow-glow hover:bg-primary-deep transition-all hover:-translate-y-0.5">
@@ -339,6 +338,14 @@ function CTA() {
             Agendar conversa
           </button>
         </form>
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm font-semibold text-ink">
+          <a href="https://wa.me/5511941768637" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 hover:text-primary transition-colors">
+            <span aria-hidden>📱</span> (11) 94176-8637
+          </a>
+          <a href="mailto:pulsoeduca@gmail.com" className="inline-flex items-center gap-2 hover:text-primary transition-colors">
+            <span aria-hidden>✉️</span> pulsoeduca@gmail.com
+          </a>
+        </div>
       </div>
     </section>
   );
