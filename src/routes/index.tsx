@@ -117,8 +117,8 @@ function Problem() {
           </h2>
           <p className="mt-6 text-lg text-cream/70 leading-relaxed">
             Gestores escolares operam no ritmo da urgência. O que aparece é o
-            visível: notas, frequência, reclamações. O que adoece o ambiente —
-            convívio, alimentação, vínculos e cultura — fica abaixo da linha
+            visível: notas, frequência, reclamações. O que adoece o ambiente,
+            convívio, alimentação, vínculos e cultura, fica abaixo da linha
             d'água, até virar crise.
           </p>
         </div>
