@@ -343,7 +343,7 @@ function Footer() {
   return (
     <footer className="bg-ink text-cream/80 py-14">
       <div className="mx-auto max-w-7xl px-6 flex flex-col md:flex-row items-center justify-between gap-6">
-        <img src={logoHorizontal} alt="Pulso Educa" className="h-12" />
+        <img src={logoHorizontal} alt="Pulso Educa" className="size-20 rounded-2xl object-cover shadow-soft" />
         <p className="text-sm">© {new Date().getFullYear()} Pulso Educa · Tecnologia e inovação para a educação.</p>
         <div className="flex gap-6 text-sm font-semibold">
           <a href="#servicos" className="hover:text-primary transition-colors">Serviços</a>
