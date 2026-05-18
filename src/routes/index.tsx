@@ -343,6 +343,8 @@ function Seal() {
     </section>
   );
 }
+
+function ForWho() {
   return (
     <section className="py-28">
       <div className="mx-auto max-w-7xl px-6">
