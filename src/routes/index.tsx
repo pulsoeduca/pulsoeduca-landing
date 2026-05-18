@@ -52,8 +52,8 @@ function Hero() {
           </h1>
           <p className="mt-7 text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed">
             Diagnóstico preventivo, planejamento estratégico e oficinas autorais
-            para transformar o convívio escolar, com foco em alimentação,
-            relacionamentos e cultura institucional.
+            para transformar o convívio escolar em alimentação, relacionamentos
+            e cultura institucional.
           </p>
           <div className="mt-9 flex flex-wrap gap-3">
             <a href="#contato" className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-base font-bold text-primary-foreground shadow-glow hover:bg-primary-deep transition-all hover:-translate-y-0.5">
@@ -122,9 +122,9 @@ function Problem() {
           </h2>
           <p className="mt-6 text-lg text-cream/70 leading-relaxed">
             Gestores escolares operam no ritmo da urgência. O que aparece é o
-            visível: notas, frequência, reclamações. O que adoece o ambiente,
-            convívio, alimentação, vínculos e cultura, fica abaixo da linha
-            d'água, até virar crise.
+            visível: notas, frequência, reclamações. Mas o que realmente adoece
+            o ambiente — convívio, alimentação, vínculos e cultura — segue
+            abaixo da linha d'água até virar crise.
           </p>
         </div>
         <ul className="space-y-3">
