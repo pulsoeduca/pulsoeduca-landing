@@ -13,8 +13,8 @@ function Header() {
     <header className="sticky top-0 z-40 backdrop-blur-md bg-background/80 border-b border-border/60">
       <div className="mx-auto max-w-7xl px-6 h-20 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-3">
-          <div className="size-11 rounded-2xl bg-primary grid place-items-center shadow-soft">
-            <img src={ring} alt="" className="size-7" />
+          <div className="size-12 rounded-2xl bg-primary grid place-items-center shadow-soft overflow-hidden">
+            <img src={walker} alt="Pulso Educa" className="h-10 w-auto object-contain" />
           </div>
           <span className="text-xl font-extrabold tracking-tight text-ink">
             Pulso<span className="text-primary"> Educa</span>
