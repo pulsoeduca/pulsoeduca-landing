@@ -10,8 +10,7 @@ export default defineConfig({
       projects: ['./tsconfig.json'],
     }),
     tailwindcss(),
-tanstackStart({
-  target: 'cloudflare-module',
-}),    react(),
+    tanstackStart(),
+    react(),
   ],
 })
