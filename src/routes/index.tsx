@@ -386,12 +386,30 @@ function CTA() {
           Conte um pouco do contexto e marcamos uma conversa de 30 minutos com a
           gestão. Sem compromisso. Só escuta e clareza sobre o próximo passo.
         </p>
-        <form className="mt-10 grid sm:grid-cols-2 gap-3 max-w-xl mx-auto text-left">
-          <input className="rounded-full border-2 border-border bg-card px-5 py-3.5 text-base font-semibold focus:outline-none focus:border-primary" placeholder="Seu nome" />
-          <input className="rounded-full border-2 border-border bg-card px-5 py-3.5 text-base font-semibold focus:outline-none focus:border-primary" placeholder="Escola" />
-          <input className="sm:col-span-2 rounded-full border-2 border-border bg-card px-5 py-3.5 text-base font-semibold focus:outline-none focus:border-primary" placeholder="E-mail profissional" />
-          <textarea rows={3} className="sm:col-span-2 rounded-3xl border-2 border-border bg-card px-5 py-4 text-base font-semibold focus:outline-none focus:border-primary resize-none" placeholder="O que está acontecendo na sua escola hoje?" />
-          <button type="button" className="sm:col-span-2 mt-2 rounded-full bg-primary text-primary-foreground px-8 py-4 text-base font-black shadow-glow hover:bg-primary-deep transition-colors">
+        <form
+          className="mt-10 grid sm:grid-cols-2 gap-3 max-w-xl mx-auto text-left"
+          onSubmit={(e) => {
+            e.preventDefault();
+            const fd = new FormData(e.currentTarget);
+            const nome = String(fd.get("nome") || "");
+            const escola = String(fd.get("escola") || "");
+            const email = String(fd.get("email") || "");
+            const contexto = String(fd.get("contexto") || "");
+            const msg =
+              `Olá! Gostaria de agendar uma conversa com o Pulso Educa.\n\n` +
+              `Nome: ${nome}\nEscola: ${escola}\nE-mail: ${email}\n\nContexto: ${contexto}`;
+            window.open(
+              `https://wa.me/5511941768637?text=${encodeURIComponent(msg)}`,
+              "_blank",
+              "noopener",
+            );
+          }}
+        >
+          <input name="nome" required className="rounded-full border-2 border-border bg-card px-5 py-3.5 text-base font-semibold focus:outline-none focus:border-primary" placeholder="Seu nome" />
+          <input name="escola" required className="rounded-full border-2 border-border bg-card px-5 py-3.5 text-base font-semibold focus:outline-none focus:border-primary" placeholder="Escola" />
+          <input name="email" type="email" required className="sm:col-span-2 rounded-full border-2 border-border bg-card px-5 py-3.5 text-base font-semibold focus:outline-none focus:border-primary" placeholder="E-mail profissional" />
+          <textarea name="contexto" rows={3} className="sm:col-span-2 rounded-3xl border-2 border-border bg-card px-5 py-4 text-base font-semibold focus:outline-none focus:border-primary resize-none" placeholder="O que está acontecendo na sua escola hoje?" />
+          <button type="submit" className="sm:col-span-2 mt-2 rounded-full bg-primary text-primary-foreground px-8 py-4 text-base font-black shadow-glow hover:bg-primary-deep transition-colors">
             Agendar conversa
           </button>
         </form>
