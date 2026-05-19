@@ -397,16 +397,19 @@ function CTA() {
             const email = String(data.get("email") || "").trim();
             const contexto = String(data.get("contexto") || "").trim();
             const msg =
-              `Olá! Gostaria de agendar uma conversa com a Pulso Educa.%0A%0A` +
-              `*Nome:* ${nome}%0A` +
-              `*Escola:* ${escola}%0A` +
-              `*E-mail:* ${email}%0A%0A` +
-              `*Contexto:*%0A${contexto}`;
-            window.open(
-              `https://api.whatsapp.com/send?phone=5511941768637&text=${msg}`,
-              "_blank",
-              "noopener,noreferrer",
-            );
+              `Olá! Gostaria de agendar uma conversa com a Pulso Educa.\n\n` +
+              `*Nome:* ${nome}\n` +
+              `*Escola:* ${escola}\n` +
+              `*E-mail:* ${email}\n\n` +
+              `*Contexto:*\n${contexto}`;
+            const url = `https://api.whatsapp.com/send?phone=5511941768637&text=${encodeURIComponent(msg)}`;
+            const a = document.createElement("a");
+            a.href = url;
+            a.target = "_blank";
+            a.rel = "noopener noreferrer";
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
           }}
         >
           <input name="nome" required className="rounded-full border-2 border-border bg-card px-5 py-3.5 text-base font-semibold focus:outline-none focus:border-primary" placeholder="Seu nome" />
