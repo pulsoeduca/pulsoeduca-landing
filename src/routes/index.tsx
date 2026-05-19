@@ -402,7 +402,7 @@ function CTA() {
               `*Escola:* ${escola}\n` +
               `*E-mail:* ${email}\n\n` +
               `*Contexto:*\n${contexto}`;
-            const url = `https://api.whatsapp.com/send?phone=5511941768637&text=${encodeURIComponent(msg)}`;
+            const url = `https://wa.me/5511941768637?text=${encodeURIComponent(msg)}`;
             const a = document.createElement("a");
             a.href = url;
             a.target = "_blank";
@@ -421,7 +421,7 @@ function CTA() {
           </button>
         </form>
         <div className="mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm font-semibold text-ink">
-          <a href="https://api.whatsapp.com/send?phone=5511941768637" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 hover:text-primary transition-colors">
+          <a href="https://wa.me/5511941768637" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 hover:text-primary transition-colors">
             <svg aria-hidden viewBox="0 0 32 32" className="size-5 shrink-0 fill-[#25D366]"><path d="M16.003 3C9.376 3 4 8.376 4 15.003c0 2.117.554 4.184 1.606 6.005L4 28l7.146-1.572a12.005 12.005 0 0 0 4.857 1.022h.005C22.633 27.45 28 22.077 28 15.45 28 8.823 22.633 3 16.003 3zm0 21.9h-.004a9.94 9.94 0 0 1-4.86-1.33l-.348-.207-4.243.933.906-4.135-.227-.36a9.93 9.93 0 0 1-1.52-5.298c0-5.493 4.47-9.962 9.963-9.962 2.66 0 5.162 1.038 7.043 2.92a9.892 9.892 0 0 1 2.917 7.05c0 5.493-4.47 9.39-9.963 9.39zm5.46-7.456c-.3-.15-1.77-.873-2.043-.973-.274-.1-.473-.15-.673.15-.2.298-.772.972-.947 1.172-.175.2-.349.224-.648.075-.299-.15-1.263-.466-2.405-1.485-.89-.793-1.49-1.772-1.664-2.07-.175-.299-.019-.46.131-.609.135-.134.299-.349.448-.523.15-.175.2-.299.299-.498.1-.2.05-.374-.025-.523-.075-.15-.673-1.62-.922-2.22-.243-.583-.49-.504-.673-.513l-.573-.01c-.2 0-.523.075-.797.374-.274.299-1.046 1.022-1.046 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.106 3.215 5.1 4.508.713.308 1.27.492 1.704.63.715.227 1.366.195 1.88.118.574-.085 1.77-.723 2.02-1.422.249-.7.249-1.299.174-1.422-.074-.124-.273-.2-.572-.349z"/></svg>
             (11) 94176-8637
           </a>
